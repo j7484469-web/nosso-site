@@ -1,142 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Para você ❤️</title>
-  <style>
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:Georgia,serif;background:#fff7f8;color:#4a2630}
-    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px;
-      background:radial-gradient(circle at top,#ffdce5,#fff7f8 55%,#f8e7ec)}
-    .card{max-width:850px;background:rgba(255,255,255,.82);padding:42px 28px;border-radius:28px;
-      box-shadow:0 15px 50px rgba(100,30,50,.12)}
-    h1{font-size:clamp(42px,9vw,82px);margin:0 0 10px}
-    h2{font-size:32px;margin-top:0}
-    p{font-size:18px;line-height:1.8}
-    .date{font-family:Arial,sans-serif;color:#8c5060;font-size:14px;letter-spacing:.08em}
-    .btn{display:inline-block;margin-top:18px;padding:13px 22px;border-radius:999px;background:#a94f68;color:#fff;text-decoration:none;font-family:Arial,sans-serif}
-    section{max-width:900px;margin:auto;padding:75px 24px}
-    .photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
-    .photo{height:300px;border-radius:22px;background:#f2dfe5;border:2px dashed #c98c9e;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;overflow:hidden}
-    .photo img{width:100%;height:100%;object-fit:cover}
-    .letter{background:#fff;border-radius:24px;padding:28px;box-shadow:0 10px 35px rgba(100,30,50,.08)}
-    .counter{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:25px}
-    .time{background:#fff;border-radius:18px;padding:16px 8px;font-family:Arial,sans-serif}
-    .time b{display:block;font-size:28px}.time span{font-size:12px;color:#8c5060}
-    .songs{display:grid;gap:14px}
-    .song{background:#fff;padding:18px 20px;border-radius:18px}
-    footer{text-align:center;padding:40px 20px;color:#8c5060}
-    @media(max-width:500px){.counter{grid-template-columns:repeat(2,1fr)}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para minha princesa ❤️</title>
+<style>
+:root{--rose:#b94f70;--dark:#4b2632;--soft:#fff4f7;--paper:#fffdfd}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--dark);font-family:Georgia,"Times New Roman",serif;background:linear-gradient(180deg,#fff6f8,#fff)}
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;background:radial-gradient(circle at 20% 20%,#ffd9e4 0 12%,transparent 35%),radial-gradient(circle at 80% 10%,#ffe9ef 0 10%,transparent 32%),linear-gradient(135deg,#fff0f4,#fff8fa)}
+.hero-card{max-width:850px;padding:42px 24px;border-radius:34px;background:rgba(255,255,255,.78);backdrop-filter:blur(8px);box-shadow:0 25px 80px rgba(100,35,55,.15)}
+.kicker{font:600 12px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#9a5b6c}
+h1{font-size:clamp(48px,12vw,100px);line-height:.95;margin:18px 0 12px;color:#7f334c}
+.subtitle{font-size:clamp(19px,4vw,26px);line-height:1.55;margin:0 auto;max-width:700px}
+.btn{display:inline-block;margin-top:28px;padding:14px 24px;border-radius:999px;background:var(--rose);color:white;text-decoration:none;font:600 14px Arial,sans-serif;box-shadow:0 10px 25px #b94f7030}
+section{max-width:920px;margin:auto;padding:78px 22px}
+h2{text-align:center;font-size:clamp(30px,6vw,48px);margin:0 0 16px;color:#7f334c}
+.lead{text-align:center;line-height:1.8;font-size:18px}
+.letter{background:var(--paper);padding:34px 28px;border-radius:26px;box-shadow:0 14px 45px #71344912;line-height:2;font-size:18px}
+.letter p{margin:0 0 18px}.signature{text-align:right;font-style:italic;color:#9d4962}
+.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0}
+.time{background:#fff;padding:18px 8px;border-radius:20px;text-align:center;box-shadow:0 10px 30px #71344912}
+.time b{display:block;font:bold 32px Arial,sans-serif;color:#9d4962}.time span{font:11px Arial,sans-serif;letter-spacing:.12em;color:#966274}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.photo{min-height:280px;border-radius:24px;background:linear-gradient(135deg,#ffe6ed,#fff4f7);border:2px dashed #d68da3;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;overflow:hidden}
+.photo img{width:100%;height:100%;min-height:280px;object-fit:cover;border-radius:18px}
+.photo-note{font:14px Arial,sans-serif;color:#9b6272;line-height:1.5}
+.timeline{display:grid;gap:16px}.moment{background:#fff;padding:22px;border-radius:20px;box-shadow:0 10px 30px #71344910}.moment b{color:#9d4962}
+.songs{display:grid;gap:14px}.song{background:#fff;padding:18px;border-radius:20px;box-shadow:0 10px 30px #71344910}.song-title{font-size:18px;margin-bottom:10px}
+.song a{display:inline-block;margin-top:4px;color:#9d4962;font:600 14px Arial,sans-serif;text-decoration:none;padding:9px 12px;background:#fff0f4;border-radius:999px}
+.note{font:13px Arial,sans-serif;line-height:1.6;color:#7f6670;text-align:center}.final{text-align:center;padding-bottom:100px}.heart{font-size:42px;animation:pulse 1.6s infinite}
+@keyframes pulse{50%{transform:scale(1.15)}} 
+@media(max-width:600px){.counter{grid-template-columns:repeat(2,1fr)}.letter{padding:25px 20px;font-size:17px}.hero-card{padding:34px 18px}}
+</style>
 </head>
 <body>
 
-<header class="hero">
-  <div class="card">
-    <div class="date">DESDE 23/11/2025 • 22:35</div>
-    <h1>É você. ❤️</h1>
-    <p>
-      <!-- ALTERE AQUI: mensagem inicial -->
-      Desde o dia em que a nossa história começou, cada momento ao seu lado ganhou um significado diferente.
-      Eu fiz esse cantinho para guardar um pouquinho do que sinto por você e de tudo que ainda quero viver ao seu lado.
-    </p>
-    <a class="btn" href="#nossa-historia">Nossa história ↓</a>
-  </div>
-</header>
+<header class="hero"><div class="hero-card">
+<div class="kicker">23 de novembro de 2025 • 22:35</div>
+<h1>Minha princesa ❤️</h1>
+<p class="subtitle">Eu fiz esse pequeno pedaço da internet para guardar uma coisa enorme: tudo aquilo que sinto por você.</p>
+<a class="btn" href="#carta">Abrir minha carta ↓</a>
+</div></header>
 
-<section id="nossa-historia">
-  <h2>Nosso tempo juntos ⏳</h2>
-  <p>Desde <b>23 de novembro de 2025, às 22:35</b>.</p>
-  <div class="counter">
-    <div class="time"><b id="days">0</b><span>DIAS</span></div>
-    <div class="time"><b id="hours">0</b><span>HORAS</span></div>
-    <div class="time"><b id="minutes">0</b><span>MINUTOS</span></div>
-    <div class="time"><b id="seconds">0</b><span>SEGUNDOS</span></div>
-  </div>
+<section id="carta"><h2>Para minha princesa</h2><div class="letter">
+<p>Minha princesa,</p>
+<p>Eu não sei se existe uma maneira perfeita de começar a falar sobre você, porque quando o assunto é você parece que qualquer palavra fica pequena. Mesmo assim, eu quis tentar. Quis criar este cantinho porque existem sentimentos que eu não queria deixar apenas dentro de mim. Queria que você pudesse voltar aqui algum dia, olhar para cada detalhe e lembrar que, em algum momento, alguém parou tudo o que estava fazendo só para transformar o amor que sente por você em palavras.</p>
+<p>Desde <b>23 de novembro de 2025, às 22:35</b>, a minha vida ganhou uma história que eu não trocaria por nenhuma outra. A partir daquele momento, você deixou de ser apenas alguém importante e passou a ocupar um espaço muito especial dentro de mim. E quanto mais o tempo passa, mais eu percebo o tamanho desse espaço.</p>
+<p>Minha princesa, você é uma mulher incrível. É maravilhosa, é linda, é especial de um jeito que não consigo explicar completamente. E quando eu digo isso, não estou falando apenas da sua beleza. Estou falando da pessoa que existe por trás do sorriso, da mulher que você é, da sua maneira de sentir, de pensar, de falar, de cuidar, de existir.</p>
+<p>Eu admiro você. Admiro a mulher que você é hoje e também a mulher que está se tornando. Admiro seus sonhos, sua personalidade, suas qualidades e até aquelas pequenas particularidades que fazem você ser simplesmente você. Para mim, você não precisa ser perfeita. Você só precisa ser você, porque é justamente essa pessoa que eu aprendi a amar.</p>
+<p>Você se tornou importante para mim de uma forma que vai muito além de palavras bonitas. Você está nas minhas lembranças, nos meus pensamentos, nas coisas que eu quero contar, nos momentos que eu gostaria de compartilhar. Às vezes uma coisa simples acontece e a primeira vontade que eu tenho é pensar em você. É como se a minha vida tivesse começado a criar espaços naturalmente destinados a nós dois.</p>
+<p>Eu amo as nossas conversas, as nossas risadas, os nossos momentos, as coisas pequenas que talvez para outra pessoa não significassem nada, mas que para mim ficam guardadas. Amo poder olhar para trás e saber que existe uma história sendo construída. Uma história que ainda está no começo, mas que já significa tanto.</p>
+<p>E eu quero que você saiba uma coisa: eu tenho muito orgulho de você. Orgulho da sua força, da sua personalidade, do caminho que você percorre e da mulher maravilhosa que existe em você. Espero que nunca se esqueça do quanto você é valiosa. Nunca deixe que um dia ruim, uma insegurança ou a opinião de alguém faça você esquecer aquilo que você é.</p>
+<p>Se algum dia você estiver triste, volte aqui. Leia isso novamente. Lembre que existe alguém que olha para você e enxerga uma pessoa extraordinária. Alguém que vê beleza em você, mas que também enxerga muito além dela. Eu vejo seu coração, sua essência, sua maneira de ser. E é isso que torna você tão especial para mim.</p>
+<p>Eu não sei exatamente tudo o que o futuro vai colocar no nosso caminho. Mas sei que sou grato por ter encontrado você e por poder chamar você de minha namorada. Quero continuar vivendo momentos ao seu lado, criando memórias, rindo de coisas bobas, aprendendo um com o outro e vendo nossa história crescer.</p>
+<p>Obrigado por existir na minha vida. Obrigado por cada carinho, cada conversa, cada sorriso e cada momento que você me deu. Obrigado simplesmente por ser você.</p>
+<p>Minha princesa, se eu pudesse resumir tudo isso em uma única frase, seria: <b>você é uma das partes mais bonitas da minha vida.</b></p>
+<p>Eu te amo, e espero que este site seja apenas mais uma pequena lembrança de algo muito maior que existe entre nós.</p>
+<p class="signature">Com todo o meu amor,<br>seu namorado. ❤️</p>
+</div></section>
+
+<section><h2>Nosso tempo juntos ⏳</h2><p class="lead">Desde <b>23/11/2025 às 22:35</b>, cada segundo faz parte da nossa história.</p>
+<div class="counter"><div class="time"><b id="days">0</b><span>DIAS</span></div><div class="time"><b id="hours">0</b><span>HORAS</span></div><div class="time"><b id="minutes">0</b><span>MINUTOS</span></div><div class="time"><b id="seconds">0</b><span>SEGUNDOS</span></div></div></section>
+
+<section><h2>Nossos momentos 📸</h2><p class="lead">Você não precisa me mandar as fotos aqui. Coloque suas próprias fotos seguindo as instruções.</p>
+<div class="photos">
+<div class="photo"><div class="photo-note">📸 FOTO 1<br><br>Salve como<br><b>foto1.jpg</b></div></div>
+<div class="photo"><div class="photo-note">📸 FOTO 2<br><br>Salve como<br><b>foto2.jpg</b></div></div>
+<div class="photo"><div class="photo-note">📸 FOTO 3<br><br>Salve como<br><b>foto3.jpg</b></div></div>
+<div class="photo"><div class="photo-note">📸 FOTO 4<br><br>Salve como<br><b>foto4.jpg</b></div></div>
+<div class="photo"><div class="photo-note">📸 FOTO 5<br><br>Salve como<br><b>foto5.jpg</b></div></div>
+<div class="photo"><div class="photo-note">📸 FOTO 6<br><br>Salve como<br><b>foto6.jpg</b></div></div>
+</div>
+<p class="note">Para colocar as fotos, envie foto1.jpg, foto2.jpg etc. junto do index.html no GitHub. Você pode adicionar mais espaços copiando um bloco de foto.</p>
 </section>
 
-<section>
-  <h2>Alguns dos nossos momentos 📸</h2>
-  <div class="photo-grid">
-    <!-- TROQUE os arquivos foto1.jpg, foto2.jpg etc. pelas suas fotos -->
-    <div class="photo"><img src="foto1.jpg" alt="Nosso momento 1"></div>
-    <div class="photo"><img src="foto2.jpg" alt="Nosso momento 2"></div>
-    <div class="photo"><img src="foto3.jpg" alt="Nosso momento 3"></div>
-    <div class="photo"><img src="foto4.jpg" alt="Nosso momento 4"></div>
-  </div>
-</section>
+<section><h2>Alguns capítulos da nossa história ✨</h2><div class="timeline">
+<div class="moment"><b>23/11/2025 • 22:35</b><br>O começo da nossa história. ❤️</div>
+<div class="moment"><b>Um momento para guardar</b><br>Escreva aqui uma lembrança especial de vocês.</div>
+<div class="moment"><b>Outro capítulo</b><br>Coloque aqui uma data, passeio, conversa ou memória importante.</div>
+</div></section>
 
-<section>
-  <h2>Uma carta para você 💌</h2>
-  <div class="letter">
-    <!-- ALTERE AQUI: carta principal -->
-    <p>Meu amor,</p>
-    <p>
-      Eu queria conseguir colocar em palavras tudo o que você significa para mim,
-      mas às vezes parece que nenhuma frase é suficiente. Você se tornou uma parte muito
-      especial da minha vida e eu sou muito feliz por poder compartilhar meus dias com você.
-    </p>
-    <p>
-      Obrigado por cada conversa, cada risada, cada abraço, cada momento e até pelas pequenas
-      coisas que talvez você nem perceba. Eu guardo tudo com muito carinho.
-    </p>
-    <p>
-      <!-- ALTERE AQUI: trecho pessoal -->
-      Aqui você pode escrever uma lembrança de vocês, uma promessa ou aquilo que mais ama nela.
-    </p>
-    <p>Eu te amo. ❤️</p>
-  </div>
-</section>
+<section><h2>Nossa trilha sonora 🎶</h2><div class="songs">
+<div class="song"><div class="song-title">🎵 <b>É Você</b> — Exaltasamba</div><a href="https://www.youtube.com/results?search_query=Exaltasamba+É+Você" target="_blank">▶ Abrir e ouvir</a></div>
+<div class="song"><div class="song-title">🎵 <b>Me Chamando de Paixão</b> — Jorge Ben Jor</div><a href="https://www.youtube.com/results?search_query=Jorge+Ben+Jor+Me+Chamando+de+Paixão" target="_blank">▶ Abrir e ouvir</a></div>
+<div class="song"><div class="song-title">🎵 <b>Eternamente</b> — Gal Costa</div><a href="https://www.youtube.com/results?search_query=Gal+Costa+Eternamente" target="_blank">▶ Abrir e ouvir</a></div>
+<div class="song"><div class="song-title">🎵 <b>Moça</b> — Jorge Ben Jor</div><a href="https://www.youtube.com/results?search_query=Jorge+Ben+Jor+Moça" target="_blank">▶ Abrir e ouvir</a></div>
+</div><p class="note">Os botões abrem a música para você ouvir. Você pode trocar os links pelos links oficiais de outra plataforma.</p></section>
 
-<section>
-  <h2>Nossa trilha sonora 🎶</h2>
-  <div class="songs">
-    <div class="song">🎵 <b>É Você</b> — Exaltasamba</div>
-    <div class="song">🎵 <b>Me Chamando de Paixão</b> — Jorge Ben Jor</div>
-    <div class="song">🎵 <b>Eternamente</b> — Gal Costa</div>
-    <div class="song">🎵 <b>Moça</b> — Jorge Ben Jor</div>
-  </div>
-  <p style="font-size:14px">
-    Para colocar as músicas tocando, adicione abaixo os links/embeds da plataforma que você usa.
-    O site não inclui os arquivos das músicas, respeitando os direitos autorais.
-  </p>
-</section>
-
-<section>
-  <h2>Uma última coisinha... ❤️</h2>
-  <div class="letter">
-    <!-- ALTERE AQUI -->
-    <p>
-      Se você chegou até aqui, saiba que cada detalhe desse site foi feito pensando em você.
-      E, se eu pudesse escolher de novo, escolheria viver essa história com você mais uma vez.
-    </p>
-  </div>
-</section>
-
-<footer>
-  Feito com carinho para você. ❤️
-</footer>
+<section class="final"><div class="heart">❤️</div><h2>Eu escolheria você de novo.</h2><p class="lead">Hoje, amanhã e em cada lembrança bonita que ainda vamos construir.</p></section>
 
 <script>
-  const inicio = new Date("2025-11-23T22:35:00-03:00");
-
-  function atualizarContador(){
-    const agora = new Date();
-    let diff = agora - inicio;
-    if(diff < 0) diff = 0;
-    const segundo = 1000, minuto = segundo*60, hora = minuto*60, dia = hora*24;
-    document.getElementById("days").textContent = Math.floor(diff/dia);
-    diff %= dia;
-    document.getElementById("hours").textContent = Math.floor(diff/hora);
-    diff %= hora;
-    document.getElementById("minutes").textContent = Math.floor(diff/minuto);
-    diff %= minuto;
-    document.getElementById("seconds").textContent = Math.floor(diff/segundo);
-  }
-  atualizarContador();
-  setInterval(atualizarContador,1000);
+const inicio=new Date("2025-11-23T22:35:00-03:00");
+function atualizar(){let d=Math.max(0,new Date()-inicio),s=1000,m=s*60,h=m*60,day=h*24;
+document.getElementById("days").textContent=Math.floor(d/day);d%=day;
+document.getElementById("hours").textContent=Math.floor(d/h);d%=h;
+document.getElementById("minutes").textContent=Math.floor(d/m);d%=m;
+document.getElementById("seconds").textContent=Math.floor(d/s)}
+atualizar();setInterval(atualizar,1000);
 </script>
-</body>
-</html>
+</body></html>
