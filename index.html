@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para você ❤️</title>
+  <style>
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Georgia,serif;background:#fff7f8;color:#4a2630}
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px;
+      background:radial-gradient(circle at top,#ffdce5,#fff7f8 55%,#f8e7ec)}
+    .card{max-width:850px;background:rgba(255,255,255,.82);padding:42px 28px;border-radius:28px;
+      box-shadow:0 15px 50px rgba(100,30,50,.12)}
+    h1{font-size:clamp(42px,9vw,82px);margin:0 0 10px}
+    h2{font-size:32px;margin-top:0}
+    p{font-size:18px;line-height:1.8}
+    .date{font-family:Arial,sans-serif;color:#8c5060;font-size:14px;letter-spacing:.08em}
+    .btn{display:inline-block;margin-top:18px;padding:13px 22px;border-radius:999px;background:#a94f68;color:#fff;text-decoration:none;font-family:Arial,sans-serif}
+    section{max-width:900px;margin:auto;padding:75px 24px}
+    .photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+    .photo{height:300px;border-radius:22px;background:#f2dfe5;border:2px dashed #c98c9e;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;overflow:hidden}
+    .photo img{width:100%;height:100%;object-fit:cover}
+    .letter{background:#fff;border-radius:24px;padding:28px;box-shadow:0 10px 35px rgba(100,30,50,.08)}
+    .counter{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:25px}
+    .time{background:#fff;border-radius:18px;padding:16px 8px;font-family:Arial,sans-serif}
+    .time b{display:block;font-size:28px}.time span{font-size:12px;color:#8c5060}
+    .songs{display:grid;gap:14px}
+    .song{background:#fff;padding:18px 20px;border-radius:18px}
+    footer{text-align:center;padding:40px 20px;color:#8c5060}
+    @media(max-width:500px){.counter{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="card">
+    <div class="date">DESDE 23/11/2025 • 22:35</div>
+    <h1>É você. ❤️</h1>
+    <p>
+      <!-- ALTERE AQUI: mensagem inicial -->
+      Desde o dia em que a nossa história começou, cada momento ao seu lado ganhou um significado diferente.
+      Eu fiz esse cantinho para guardar um pouquinho do que sinto por você e de tudo que ainda quero viver ao seu lado.
+    </p>
+    <a class="btn" href="#nossa-historia">Nossa história ↓</a>
+  </div>
+</header>
+
+<section id="nossa-historia">
+  <h2>Nosso tempo juntos ⏳</h2>
+  <p>Desde <b>23 de novembro de 2025, às 22:35</b>.</p>
+  <div class="counter">
+    <div class="time"><b id="days">0</b><span>DIAS</span></div>
+    <div class="time"><b id="hours">0</b><span>HORAS</span></div>
+    <div class="time"><b id="minutes">0</b><span>MINUTOS</span></div>
+    <div class="time"><b id="seconds">0</b><span>SEGUNDOS</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Alguns dos nossos momentos 📸</h2>
+  <div class="photo-grid">
+    <!-- TROQUE os arquivos foto1.jpg, foto2.jpg etc. pelas suas fotos -->
+    <div class="photo"><img src="foto1.jpg" alt="Nosso momento 1"></div>
+    <div class="photo"><img src="foto2.jpg" alt="Nosso momento 2"></div>
+    <div class="photo"><img src="foto3.jpg" alt="Nosso momento 3"></div>
+    <div class="photo"><img src="foto4.jpg" alt="Nosso momento 4"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Uma carta para você 💌</h2>
+  <div class="letter">
+    <!-- ALTERE AQUI: carta principal -->
+    <p>Meu amor,</p>
+    <p>
+      Eu queria conseguir colocar em palavras tudo o que você significa para mim,
+      mas às vezes parece que nenhuma frase é suficiente. Você se tornou uma parte muito
+      especial da minha vida e eu sou muito feliz por poder compartilhar meus dias com você.
+    </p>
+    <p>
+      Obrigado por cada conversa, cada risada, cada abraço, cada momento e até pelas pequenas
+      coisas que talvez você nem perceba. Eu guardo tudo com muito carinho.
+    </p>
+    <p>
+      <!-- ALTERE AQUI: trecho pessoal -->
+      Aqui você pode escrever uma lembrança de vocês, uma promessa ou aquilo que mais ama nela.
+    </p>
+    <p>Eu te amo. ❤️</p>
+  </div>
+</section>
+
+<section>
+  <h2>Nossa trilha sonora 🎶</h2>
+  <div class="songs">
+    <div class="song">🎵 <b>É Você</b> — Exaltasamba</div>
+    <div class="song">🎵 <b>Me Chamando de Paixão</b> — Jorge Ben Jor</div>
+    <div class="song">🎵 <b>Eternamente</b> — Gal Costa</div>
+    <div class="song">🎵 <b>Moça</b> — Jorge Ben Jor</div>
+  </div>
+  <p style="font-size:14px">
+    Para colocar as músicas tocando, adicione abaixo os links/embeds da plataforma que você usa.
+    O site não inclui os arquivos das músicas, respeitando os direitos autorais.
+  </p>
+</section>
+
+<section>
+  <h2>Uma última coisinha... ❤️</h2>
+  <div class="letter">
+    <!-- ALTERE AQUI -->
+    <p>
+      Se você chegou até aqui, saiba que cada detalhe desse site foi feito pensando em você.
+      E, se eu pudesse escolher de novo, escolheria viver essa história com você mais uma vez.
+    </p>
+  </div>
+</section>
+
+<footer>
+  Feito com carinho para você. ❤️
+</footer>
+
+<script>
+  const inicio = new Date("2025-11-23T22:35:00-03:00");
+
+  function atualizarContador(){
+    const agora = new Date();
+    let diff = agora - inicio;
+    if(diff < 0) diff = 0;
+    const segundo = 1000, minuto = segundo*60, hora = minuto*60, dia = hora*24;
+    document.getElementById("days").textContent = Math.floor(diff/dia);
+    diff %= dia;
+    document.getElementById("hours").textContent = Math.floor(diff/hora);
+    diff %= hora;
+    document.getElementById("minutes").textContent = Math.floor(diff/minuto);
+    diff %= minuto;
+    document.getElementById("seconds").textContent = Math.floor(diff/segundo);
+  }
+  atualizarContador();
+  setInterval(atualizarContador,1000);
+</script>
+</body>
+</html>
