@@ -1,92 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Para minha princesa ❤️</title>
 <style>
-:root{--rose:#b94f70;--dark:#4b2632;--soft:#fff4f7;--paper:#fffdfd}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;color:var(--dark);font-family:Georgia,"Times New Roman",serif;background:linear-gradient(180deg,#fff6f8,#fff)}
-.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;background:radial-gradient(circle at 20% 20%,#ffd9e4 0 12%,transparent 35%),radial-gradient(circle at 80% 10%,#ffe9ef 0 10%,transparent 32%),linear-gradient(135deg,#fff0f4,#fff8fa)}
-.hero-card{max-width:850px;padding:42px 24px;border-radius:34px;background:rgba(255,255,255,.78);backdrop-filter:blur(8px);box-shadow:0 25px 80px rgba(100,35,55,.15)}
-.kicker{font:600 12px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#9a5b6c}
-h1{font-size:clamp(48px,12vw,100px);line-height:.95;margin:18px 0 12px;color:#7f334c}
-.subtitle{font-size:clamp(19px,4vw,26px);line-height:1.55;margin:0 auto;max-width:700px}
-.btn{display:inline-block;margin-top:28px;padding:14px 24px;border-radius:999px;background:var(--rose);color:white;text-decoration:none;font:600 14px Arial,sans-serif;box-shadow:0 10px 25px #b94f7030}
-section{max-width:920px;margin:auto;padding:78px 22px}
-h2{text-align:center;font-size:clamp(30px,6vw,48px);margin:0 0 16px;color:#7f334c}
-.lead{text-align:center;line-height:1.8;font-size:18px}
-.letter{background:var(--paper);padding:34px 28px;border-radius:26px;box-shadow:0 14px 45px #71344912;line-height:2;font-size:18px}
-.letter p{margin:0 0 18px}.signature{text-align:right;font-style:italic;color:#9d4962}
-.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0}
-.time{background:#fff;padding:18px 8px;border-radius:20px;text-align:center;box-shadow:0 10px 30px #71344912}
-.time b{display:block;font:bold 32px Arial,sans-serif;color:#9d4962}.time span{font:11px Arial,sans-serif;letter-spacing:.12em;color:#966274}
-.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
-.photo{min-height:280px;border-radius:24px;background:linear-gradient(135deg,#ffe6ed,#fff4f7);border:2px dashed #d68da3;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;overflow:hidden}
-.photo img{width:100%;height:100%;min-height:280px;object-fit:cover;border-radius:18px}
-.photo-note{font:14px Arial,sans-serif;color:#9b6272;line-height:1.5}
-.timeline{display:grid;gap:16px}.moment{background:#fff;padding:22px;border-radius:20px;box-shadow:0 10px 30px #71344910}.moment b{color:#9d4962}
-.songs{display:grid;gap:14px}.song{background:#fff;padding:18px;border-radius:20px;box-shadow:0 10px 30px #71344910}.song-title{font-size:18px;margin-bottom:10px}
-.song a{display:inline-block;margin-top:4px;color:#9d4962;font:600 14px Arial,sans-serif;text-decoration:none;padding:9px 12px;background:#fff0f4;border-radius:999px}
-.note{font:13px Arial,sans-serif;line-height:1.6;color:#7f6670;text-align:center}.final{text-align:center;padding-bottom:100px}.heart{font-size:42px;animation:pulse 1.6s infinite}
-@keyframes pulse{50%{transform:scale(1.15)}} 
-@media(max-width:600px){.counter{grid-template-columns:repeat(2,1fr)}.letter{padding:25px 20px;font-size:17px}.hero-card{padding:34px 18px}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#4b2632;font-family:Georgia,serif;background:linear-gradient(#fff5f8,#fff)}
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;background:radial-gradient(circle at 20% 20%,#ffd9e4 0 12%,transparent 35%),radial-gradient(circle at 80% 10%,#ffe9ef 0 10%,transparent 32%),linear-gradient(135deg,#fff0f4,#fff)}
+.card{max-width:850px;padding:45px 25px;border-radius:34px;background:#ffffffcc;backdrop-filter:blur(8px);box-shadow:0 25px 80px #64233726}.kicker{font:600 12px Arial;letter-spacing:.2em;text-transform:uppercase;color:#9a5b6c}h1{font-size:clamp(50px,12vw,100px);line-height:.95;margin:18px 0;color:#7f334c}.sub{font-size:clamp(19px,4vw,26px);line-height:1.55}.btn{display:inline-block;margin-top:25px;padding:14px 25px;border-radius:999px;background:#b94f70;color:white;text-decoration:none;font:600 14px Arial}
+section{max-width:920px;margin:auto;padding:75px 22px}h2{text-align:center;font-size:clamp(30px,6vw,48px);color:#7f334c;margin:0 0 20px}.lead{text-align:center;font-size:18px;line-height:1.8}
+.letter{background:#fffdfd;padding:35px 28px;border-radius:26px;box-shadow:0 14px 45px #71344912;line-height:2;font-size:18px}.letter p{margin:0 0 18px}.signature{text-align:right;color:#9d4962}
+.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}.time{background:#fff;padding:18px 8px;border-radius:20px;text-align:center;box-shadow:0 10px 30px #71344912}.time b{display:block;font:bold 32px Arial;color:#9d4962}.time span{font:11px Arial;letter-spacing:.12em;color:#966274}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}.photo{height:300px;border-radius:24px;background:linear-gradient(135deg,#ffe6ed,#fff7f9);border:2px solid #f0c5d2;box-shadow:0 10px 30px #71344910;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.songs{display:grid;gap:14px}.song{background:#fff;padding:18px;border-radius:20px;box-shadow:0 10px 30px #71344910}.song a{display:inline-block;margin-top:8px;padding:9px 14px;border-radius:999px;background:#fff0f4;color:#9d4962;text-decoration:none;font:600 14px Arial}.final{text-align:center;padding-bottom:100px}.heart{font-size:44px;animation:pulse 1.5s infinite}@keyframes pulse{50%{transform:scale(1.15)}}@media(max-width:600px){.counter{grid-template-columns:repeat(2,1fr)}.letter{padding:25px 20px;font-size:17px}}
 </style>
 </head>
 <body>
-
-<header class="hero"><div class="hero-card">
-<div class="kicker">23 de novembro de 2025 • 22:35</div>
-<h1>Minha princesa ❤️</h1>
-<p class="subtitle">Eu fiz esse pequeno pedaço da internet para guardar uma coisa enorme: tudo aquilo que sinto por você.</p>
-<a class="btn" href="#carta">Abrir minha carta ↓</a>
-</div></header>
+<header class="hero"><div class="card"><div class="kicker">23 de novembro de 2025 • 22:35</div><h1>Minha princesa ❤️</h1><p class="sub">Eu fiz esse pequeno pedaço da internet para guardar uma coisa enorme: tudo aquilo que sinto por você.</p><a class="btn" href="#carta">Abrir minha carta ↓</a></div></header>
 
 <section id="carta"><h2>Para minha princesa</h2><div class="letter">
 <p>Minha princesa,</p>
-<p>Eu não sei se existe uma maneira perfeita de começar a falar sobre você, porque quando o assunto é você parece que qualquer palavra fica pequena. Mesmo assim, eu quis tentar. Quis criar este cantinho porque existem sentimentos que eu não queria deixar apenas dentro de mim. Queria que você pudesse voltar aqui algum dia, olhar para cada detalhe e lembrar que, em algum momento, alguém parou tudo o que estava fazendo só para transformar o amor que sente por você em palavras.</p>
-<p>Desde <b>23 de novembro de 2025, às 22:35</b>, a minha vida ganhou uma história que eu não trocaria por nenhuma outra. A partir daquele momento, você deixou de ser apenas alguém importante e passou a ocupar um espaço muito especial dentro de mim. E quanto mais o tempo passa, mais eu percebo o tamanho desse espaço.</p>
-<p>Minha princesa, você é uma mulher incrível. É maravilhosa, é linda, é especial de um jeito que não consigo explicar completamente. E quando eu digo isso, não estou falando apenas da sua beleza. Estou falando da pessoa que existe por trás do sorriso, da mulher que você é, da sua maneira de sentir, de pensar, de falar, de cuidar, de existir.</p>
-<p>Eu admiro você. Admiro a mulher que você é hoje e também a mulher que está se tornando. Admiro seus sonhos, sua personalidade, suas qualidades e até aquelas pequenas particularidades que fazem você ser simplesmente você. Para mim, você não precisa ser perfeita. Você só precisa ser você, porque é justamente essa pessoa que eu aprendi a amar.</p>
-<p>Você se tornou importante para mim de uma forma que vai muito além de palavras bonitas. Você está nas minhas lembranças, nos meus pensamentos, nas coisas que eu quero contar, nos momentos que eu gostaria de compartilhar. Às vezes uma coisa simples acontece e a primeira vontade que eu tenho é pensar em você. É como se a minha vida tivesse começado a criar espaços naturalmente destinados a nós dois.</p>
-<p>Eu amo as nossas conversas, as nossas risadas, os nossos momentos, as coisas pequenas que talvez para outra pessoa não significassem nada, mas que para mim ficam guardadas. Amo poder olhar para trás e saber que existe uma história sendo construída. Uma história que ainda está no começo, mas que já significa tanto.</p>
-<p>E eu quero que você saiba uma coisa: eu tenho muito orgulho de você. Orgulho da sua força, da sua personalidade, do caminho que você percorre e da mulher maravilhosa que existe em você. Espero que nunca se esqueça do quanto você é valiosa. Nunca deixe que um dia ruim, uma insegurança ou a opinião de alguém faça você esquecer aquilo que você é.</p>
-<p>Se algum dia você estiver triste, volte aqui. Leia isso novamente. Lembre que existe alguém que olha para você e enxerga uma pessoa extraordinária. Alguém que vê beleza em você, mas que também enxerga muito além dela. Eu vejo seu coração, sua essência, sua maneira de ser. E é isso que torna você tão especial para mim.</p>
-<p>Eu não sei exatamente tudo o que o futuro vai colocar no nosso caminho. Mas sei que sou grato por ter encontrado você e por poder chamar você de minha namorada. Quero continuar vivendo momentos ao seu lado, criando memórias, rindo de coisas bobas, aprendendo um com o outro e vendo nossa história crescer.</p>
-<p>Obrigado por existir na minha vida. Obrigado por cada carinho, cada conversa, cada sorriso e cada momento que você me deu. Obrigado simplesmente por ser você.</p>
-<p>Minha princesa, se eu pudesse resumir tudo isso em uma única frase, seria: <b>você é uma das partes mais bonitas da minha vida.</b></p>
-<p>Eu te amo, e espero que este site seja apenas mais uma pequena lembrança de algo muito maior que existe entre nós.</p>
-<p class="signature">Com todo o meu amor,<br>seu namorado. ❤️</p>
+<p>Eu poderia escrever páginas e páginas sobre você e ainda sentir que faltou alguma coisa. Talvez porque, quando alguém se torna tão importante, as palavras começam a parecer pequenas demais para carregar tudo aquilo que existe dentro do coração. Mesmo assim, eu quis tentar. Quis transformar um pouco do que sinto em palavras para que você pudesse guardar, voltar aqui quando quiser e lembrar do quanto é amada, admirada e importante para mim.</p>
+<p>Desde <b>23 de novembro de 2025, às 22:35</b>, existe um antes e um depois na minha história. Foi naquele momento que a nossa história começou oficialmente, mas, olhando para tudo que vivemos desde então, parece que aquele horário marcou muito mais do que o começo de um namoro. Marcou o começo de uma das partes mais bonitas da minha vida.</p>
+<p>Minha princesa, você é uma mulher <b>incrível</b>. Você é maravilhosa, linda, especial e única, mas o que mais me encanta em você não é apenas aquilo que os olhos conseguem enxergar. É tudo aquilo que existe dentro de você. É a sua essência, a sua maneira de ser, a sua personalidade, o seu coração e a força que existe nessa mulher que eu tenho tanto orgulho de chamar de minha.</p>
+<p>Eu admiro profundamente a sua força. Admiro a maneira como você continua seguindo em frente mesmo quando as coisas não são fáceis. Admiro tudo aquilo que você enfrenta, tudo aquilo que aprende, tudo aquilo que supera e, principalmente, a pessoa que você escolhe continuar sendo apesar das dificuldades. Talvez você mesma nem perceba o quanto é forte algumas vezes, mas eu percebo. Eu vejo. E tenho um orgulho imenso de você.</p>
+<p>Tenho orgulho da mulher que você é hoje e ainda mais orgulho da mulher que você está se tornando. Tenho orgulho dos seus sonhos, das suas escolhas, da sua coragem, da sua personalidade e de cada pequeno passo que você dá em direção à pessoa que deseja ser. Eu quero estar aqui para ver você crescer, conquistar seus objetivos, realizar seus sonhos e descobrir cada vez mais a mulher extraordinária que existe dentro de você.</p>
+<p>Você não precisa ser perfeita para ser admirada por mim. Não precisa acertar sempre, não precisa estar bem todos os dias e não precisa esconder suas inseguranças para ser maravilhosa aos meus olhos. Eu gosto de você por inteira. Gosto da sua alegria, das suas manias, das suas particularidades, das suas opiniões, dos seus jeitos e até daqueles pequenos detalhes que talvez você nem imagine que eu reparo.</p>
+<p>Você é linda de uma maneira que vai muito além da aparência. É linda quando sorri, quando fala sobre alguma coisa que gosta, quando fica feliz com algo simples, quando demonstra carinho, quando está concentrada, quando está sendo você sem tentar agradar ninguém. Existe uma beleza em você que não depende de espelho nenhum. É uma beleza que está na sua presença e na forma como você faz o mundo ao seu redor ficar diferente.</p>
+<p>E eu quero que você saiba que me sinto muito feliz por poder conhecer cada vez mais essa mulher. Feliz por poder ouvir sua voz, conversar com você, dividir meus pensamentos, contar coisas do meu dia e saber que existe alguém especial do outro lado. Você se tornou aquela pessoa que eu quero procurar quando alguma coisa acontece, seja uma coisa enorme ou uma besteira qualquer. Porque compartilhar a vida com você faz até as pequenas coisas terem outro significado.</p>
+<p>Eu amo as nossas conversas. Amo nossas risadas. Amo nossas brincadeiras, nossos momentos e todas aquelas coisas que só fazem sentido porque são nossas. Amo as lembranças que já construímos e gosto ainda mais de pensar nas lembranças que ainda nem existem, mas que um dia vão existir.</p>
+<p>Você ocupa um espaço muito especial na minha vida. Não é apenas porque você é minha namorada. É porque você se tornou alguém que eu genuinamente admiro, alguém cuja felicidade importa para mim, alguém que eu quero ver bem, crescendo, sorrindo e realizando tudo aquilo que deseja.</p>
+<p>Se algum dia você duvidar de si mesma, eu espero que se lembre de mim dizendo: <b>eu acredito em você.</b> Eu acredito na sua capacidade, na sua força e na mulher maravilhosa que você é. E quando talvez você não consiga enxergar tudo isso em si mesma, espero que consiga lembrar que existe alguém olhando para você e enxergando muito mais do que você imagina.</p>
+<p>Eu tenho orgulho de você, minha princesa. Um orgulho que não depende de grandes conquistas. Tenho orgulho de você simplesmente por ser quem é. Tenho orgulho da sua caminhada, da sua coragem e de cada vez que você continua mesmo quando seria mais fácil desistir. Tenho orgulho da sua existência na minha vida.</p>
+<p>E se eu pudesse te dar uma certeza para levar para todos os dias que ainda virão, seria esta: <b>você é importante.</b> Você importa. Sua história importa. Seus sonhos importam. Seus sentimentos importam. E para mim, você importa de uma maneira que nenhuma frase bonita conseguiria explicar completamente.</p>
+<p>Eu espero que, quando olhar para este site, você não veja apenas uma página na internet. Espero que veja um pedacinho do meu coração. Cada palavra aqui existe porque você existe na minha vida. Cada detalhe foi pensado para você. E cada vez que eu olhar para essa história, vou lembrar que tudo começou naquele dia, naquele horário, com a pessoa que hoje eu tenho a felicidade de chamar de minha princesa.</p>
+<p>Eu não sei exatamente quantos momentos ainda teremos pela frente. Não sei quantas fotografias ainda vamos tirar, quantas risadas ainda vamos dar, quantas conversas ainda vamos ter ou quantas lembranças ainda vamos criar. Mas eu sei que sou muito grato por tudo que já vivemos e muito feliz por saber que ainda existe tanta história para construir.</p>
+<p>Quero continuar conhecendo você. Quero continuar admirando você. Quero continuar vendo você crescer e se tornar cada vez mais a mulher incrível que já é. Quero continuar guardando nossas lembranças e criando novas. Quero continuar tendo motivos para olhar para você e pensar: <b>“que sorte a minha.”</b></p>
+<p>Obrigado por ser você. Obrigado por existir. Obrigado por cada sorriso, cada palavra, cada carinho, cada conversa e cada momento. Obrigado por ter entrado na minha vida e por ter feito dela um lugar mais bonito.</p>
+<p>Minha princesa, eu espero que você nunca se esqueça de uma coisa: <b>eu tenho um orgulho enorme de você, admiro profundamente a mulher que você é e sou muito feliz por poder viver essa história ao seu lado.</b></p>
+<p>Eu te amo. E, se depender de mim, ainda teremos muitos motivos para voltar aqui e lembrar de tudo que começou naquela noite de 23 de novembro.</p>
+<p class="signature"><b>Jão Bobão ❤️</b></p>
 </div></section>
 
-<section><h2>Nosso tempo juntos ⏳</h2><p class="lead">Desde <b>23/11/2025 às 22:35</b>, cada segundo faz parte da nossa história.</p>
-<div class="counter"><div class="time"><b id="days">0</b><span>DIAS</span></div><div class="time"><b id="hours">0</b><span>HORAS</span></div><div class="time"><b id="minutes">0</b><span>MINUTOS</span></div><div class="time"><b id="seconds">0</b><span>SEGUNDOS</span></div></div></section>
+<section><h2>Nosso tempo juntos ⏳</h2><p class="lead">Desde <b>23/11/2025 às 22:35</b>, cada segundo faz parte da nossa história.</p><div class="counter"><div class="time"><b id="days">0</b><span>DIAS</span></div><div class="time"><b id="hours">0</b><span>HORAS</span></div><div class="time"><b id="minutes">0</b><span>MINUTOS</span></div><div class="time"><b id="seconds">0</b><span>SEGUNDOS</span></div></div></section>
 
-<section><h2>Nossos momentos 📸</h2><p class="lead">Você não precisa me mandar as fotos aqui. Coloque suas próprias fotos seguindo as instruções.</p>
-<div class="photos">
-<div class="photo"><div class="photo-note">📸 FOTO 1<br><br>Salve como<br><b>foto1.jpg</b></div></div>
-<div class="photo"><div class="photo-note">📸 FOTO 2<br><br>Salve como<br><b>foto2.jpg</b></div></div>
-<div class="photo"><div class="photo-note">📸 FOTO 3<br><br>Salve como<br><b>foto3.jpg</b></div></div>
-<div class="photo"><div class="photo-note">📸 FOTO 4<br><br>Salve como<br><b>foto4.jpg</b></div></div>
-<div class="photo"><div class="photo-note">📸 FOTO 5<br><br>Salve como<br><b>foto5.jpg</b></div></div>
-<div class="photo"><div class="photo-note">📸 FOTO 6<br><br>Salve como<br><b>foto6.jpg</b></div></div>
-</div>
-<p class="note">Para colocar as fotos, envie foto1.jpg, foto2.jpg etc. junto do index.html no GitHub. Você pode adicionar mais espaços copiando um bloco de foto.</p>
-</section>
-
-<section><h2>Alguns capítulos da nossa história ✨</h2><div class="timeline">
-<div class="moment"><b>23/11/2025 • 22:35</b><br>O começo da nossa história. ❤️</div>
-<div class="moment"><b>Um momento para guardar</b><br>Escreva aqui uma lembrança especial de vocês.</div>
-<div class="moment"><b>Outro capítulo</b><br>Coloque aqui uma data, passeio, conversa ou memória importante.</div>
+<section><h2>Nossos momentos 📸</h2><p class="lead">Alguns pedacinhos da nossa história. ❤️</p><div class="photos">
+<div class="photo"><img src="foto1.jpg" alt=""></div><div class="photo"><img src="foto2.jpg" alt=""></div><div class="photo"><img src="foto3.jpg" alt=""></div><div class="photo"><img src="foto4.jpg" alt=""></div><div class="photo"><img src="foto5.jpg" alt=""></div><div class="photo"><img src="foto6.jpg" alt=""></div>
 </div></section>
 
 <section><h2>Nossa trilha sonora 🎶</h2><div class="songs">
-<div class="song"><div class="song-title">🎵 <b>É Você</b> — Exaltasamba</div><a href="https://www.youtube.com/results?search_query=Exaltasamba+É+Você" target="_blank">▶ Abrir e ouvir</a></div>
-<div class="song"><div class="song-title">🎵 <b>Me Chamando de Paixão</b> — Jorge Ben Jor</div><a href="https://www.youtube.com/results?search_query=Jorge+Ben+Jor+Me+Chamando+de+Paixão" target="_blank">▶ Abrir e ouvir</a></div>
-<div class="song"><div class="song-title">🎵 <b>Eternamente</b> — Gal Costa</div><a href="https://www.youtube.com/results?search_query=Gal+Costa+Eternamente" target="_blank">▶ Abrir e ouvir</a></div>
-<div class="song"><div class="song-title">🎵 <b>Moça</b> — Jorge Ben Jor</div><a href="https://www.youtube.com/results?search_query=Jorge+Ben+Jor+Moça" target="_blank">▶ Abrir e ouvir</a></div>
-</div><p class="note">Os botões abrem a música para você ouvir. Você pode trocar os links pelos links oficiais de outra plataforma.</p></section>
+<div class="song"><b>É Você — Exaltasamba</b><br><a href="https://www.youtube.com/results?search_query=Exaltasamba+É+Você" target="_blank">▶ Ouvir</a></div>
+<div class="song"><b>Me Chamando de Paixão — Jorge Ben Jor</b><br><a href="https://www.youtube.com/results?search_query=Jorge+Ben+Jor+Me+Chamando+de+Paixão" target="_blank">▶ Ouvir</a></div>
+<div class="song"><b>Eternamente — Gal Costa</b><br><a href="https://www.youtube.com/results?search_query=Gal+Costa+Eternamente" target="_blank">▶ Ouvir</a></div>
+<div class="song"><b>Moça — Jorge Ben Jor</b><br><a href="https://www.youtube.com/results?search_query=Jorge+Ben+Jor+Moça" target="_blank">▶ Ouvir</a></div>
+</div></section>
 
 <section class="final"><div class="heart">❤️</div><h2>Eu escolheria você de novo.</h2><p class="lead">Hoje, amanhã e em cada lembrança bonita que ainda vamos construir.</p></section>
 
